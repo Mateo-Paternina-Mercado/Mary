@@ -31,8 +31,8 @@ const playlist = [
       es: "Melodía Romántica",
     },
     artist: {
-      en: "For Caro",
-      es: "Para Caro",
+      en: "For Mary",
+      es: "Para Mary",
     },
     duration: "3:45",
   },
@@ -48,7 +48,7 @@ const translations = {
     "gallery-title": "Gallery of Moments",
     "gallery-subtitle": "Each image tells a special story",
     "main-message":
-      "Each photo tells a story, each smile brightens the day. You are someone incredibly special and these images are just a small reflection of how wonderful you are. Thank you for being you, Caro. ✨",
+      "Each photo tells a story, each smile brightens the day. You are someone incredibly special and these images are just a small reflection of how wonderful you are. Thank you for being you, Mary. ✨",
     caption1: "Natural Beauty ♡",
     caption2: "Infinite Sweetness ♡",
     caption3: "Perfect Smile ♡",
@@ -97,8 +97,8 @@ const translations = {
     "music-paused": "Music Paused",
     "no-music": "No Music",
     "photo-liked": "Photo liked! 💕",
-    "easter-egg-mobile": "🎉 Mobile secret activated! You are incredible, Caro! 🎉",
-    "easter-egg-desktop": "🎉 Secret code activated! You are incredible, Caro! 🎉",
+    "easter-egg-mobile": "🎉 Mobile secret activated! You are incredible, Mary! 🎉",
+    "easter-egg-desktop": "🎉 Secret code activated! You are incredible, Mary! 🎉",
     "music-started": "🎵 Music started",
     "music-stopped": "🔇 Music stopped",
     "theme-changed": "🌙 Theme changed",
@@ -117,7 +117,7 @@ const translations = {
     "gallery-title": "Galería de Momentos",
     "gallery-subtitle": "Cada imagen cuenta una historia especial",
     "main-message":
-      "Cada foto cuenta una historia, cada sonrisa ilumina el día. Eres alguien increíblemente especial y estas imágenes son solo un pequeño reflejo de lo maravillosa que eres. Gracias por ser tú, Caro. ✨",
+      "Cada foto cuenta una historia, cada sonrisa ilumina el día. Eres alguien increíblemente especial y estas imágenes son solo un pequeño reflejo de lo maravillosa que eres. Gracias por ser tú, Mary. ✨",
     caption1: "Belleza Natural ♡",
     caption2: "Dulzura Infinita ♡",
     caption3: "Sonrisa Perfecta ♡",
@@ -166,8 +166,8 @@ const translations = {
     "music-paused": "Música Pausada",
     "no-music": "Sin Música",
     "photo-liked": "¡Foto marcada como favorita! 💕",
-    "easter-egg-mobile": "🎉 ¡Secreto móvil activado! Eres increíble, Caro! 🎉",
-    "easter-egg-desktop": "🎉 ¡Código secreto activado! Eres increíble, Caro! 🎉",
+    "easter-egg-mobile": "🎉 ¡Secreto móvil activado! Eres increíble, Mary! 🎉",
+    "easter-egg-desktop": "🎉 ¡Código secreto activado! Eres increíble, Mary! 🎉",
     "music-started": "🎵 Música iniciada",
     "music-stopped": "🔇 Música detenida",
     "theme-changed": "🌙 Tema cambiado",
@@ -185,7 +185,7 @@ let currentLanguage = "es"
 // Mensajes dinámicos expandidos
 const dynamicMessages = {
   en: [
-    "Each photo tells a story, each smile brightens the day. You are someone incredibly special and these images are just a small reflection of how wonderful you are. Thank you for being you, Caro. ✨",
+    "Each photo tells a story, each smile brightens the day. You are someone incredibly special and these images are just a small reflection of how wonderful you are. Thank you for being you, Mary. ✨",
     "Your smile is like a ray of sunshine that lights up even the grayest days. Every moment with you is a gift I treasure. 💕",
     "In a world full of ordinary people, you shine with a unique and special light. Your authenticity is inspiring. 🌟",
     "Each photograph captures not only your outer beauty, but also the warmth of your heart and the purity of your soul. 💖",
@@ -193,7 +193,7 @@ const dynamicMessages = {
     "Like a beautiful melody that stays in your heart, your presence brings joy and harmony to life. 🎵",
   ],
   es: [
-    "Cada foto cuenta una historia, cada sonrisa ilumina el día. Eres alguien increíblemente especial y estas imágenes son solo un pequeño reflejo de lo maravillosa que eres. Gracias por ser tú, Caro. ✨",
+    "Cada foto cuenta una historia, cada sonrisa ilumina el día. Eres alguien increíblemente especial y estas imágenes son solo un pequeño reflejo de lo maravillosa que eres. Gracias por ser tú, Mary. ✨",
     "Tu sonrisa es como un rayo de sol que ilumina incluso los días más grises. Cada momento contigo es un regalo que atesoro. 💕",
     "En un mundo lleno de personas ordinarias, tú brillas con una luz única y especial. Tu autenticidad es inspiradora. 🌟",
     "Cada fotografía captura no solo tu belleza exterior, sino también la calidez de tu corazón y la pureza de tu alma. 💖",
@@ -431,7 +431,7 @@ class WaveCanvas {
 
 // Inicialización mejorada y más rápida
 function initializeApp() {
-  console.log("🌸 Iniciando página especial para Caro...")
+  console.log("🌸 Iniciando página especial para Mary...")
 
   // Ocultar loader más rápido (1.5 segundos en lugar de 3)
   setTimeout(hideLoader, 1500)
@@ -486,7 +486,7 @@ function updateLanguage() {
 
   // Actualizar título principal
   const titleLetters = document.querySelectorAll(".letter")
-  const newTitle = currentLanguage === "en" ? "For Caro ♡" : "Para Caro ♡"
+  const newTitle = currentLanguage === "en" ? "For Mary ♡" : "Para Mary ♡"
   titleLetters.forEach((letter, index) => {
     if (index < newTitle.length) {
       letter.textContent = newTitle[index]
